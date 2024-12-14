@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(231, 217, 195);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* criação nav de menu horizontal */
+.nav-menu-horizontal {
+    height: 38px;
+    background-color: rgb(227, 195, 195);
+    color: aliceblue;
+}
+
+.container-menu-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 6px;
+    color: white;
+}
+
+#boas-vindas, #texto-inicial {
+    display: flex;
+    justify-content: center;
+}
+
+.paises {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.paises img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+table {
+    border: 2px solid #050505 ;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 80px;
+}
+
+.canada-tabela, .espanha-tabela {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*três colunas do mesmo tamanho*/
+    grid-template-rows: auto 100px; /*uma linha automática e uma fixa*/
+    gap: 5px;
+}
+
+.container img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+.table-destinos {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.button {
+    background-color: rgb(216, 183, 183);
+    color: rgb(15, 15, 15);
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Personalizar formulário de cadastro */
+
+.container-cadastro {
+    display: flex;
+    width: 600px;
+    height: 90vh;
+    bottom: 30px;
+}
+
+.h2-form {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 10%;
+    margin-top: 200px;
+    
+}
+
+/* personalização div que contém elementos do formulário de cadastro */
+.cadastro {
+    width: 600px;
+    height: 800px;
+    background-color: rgb(223, 148, 148);
+    display: flex;
+    position: absolute;
+    left: 33%;
+    border-radius: 20px;
+    top: 140px;
+    margin: auto;
+}
+
+.elementos-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: calc(800px - 665px);
+    margin-top: 60px;
+}
+
+label {
+    display: flex;
+    position: relative;
+    right: 143px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    width: 340px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+}
+
+input::placeholder {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.container-btn-cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.form-btn-cadastrar {
+    width: 150px;
+    height: 48px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-btn-cadastrar:hover {
+    background-color: rgb(71, 70, 70);
+}
